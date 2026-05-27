@@ -1,0 +1,76 @@
+body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #eef5ff;
+        }
+
+
+        #header{
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #header img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+      
+        #nav{
+            background-color: #1565c0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+     
+
+        #inicio{
+            background-color: #bbdefb;
+            padding: 20px;
+        }
+
+        #sobreMi{
+            background-color: #90caf9;
+            padding: 20px;
+        }
+
+        #habilidades{
+            background-color: #64b5f6;
+            padding: 20px;
+        }
+
+        #proyectos{
+            background-color: #42a5f5;
+            padding: 20px;
+            color: white;
+        }
+
+        #contacto{
+            background-color: #1e88e5;
+            padding: 20px;
+            color: white;
+        }
+
+   
+
+        #footer{
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        h2{
+            margin-top: 0;
+        }
