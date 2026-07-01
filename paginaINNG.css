@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f8f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    height: 400px;
+    background:
+        linear-gradient(rgba(27, 94, 32, .45),
+            rgba(46, 125, 50, .45)),
+        url("vista\ panoramica.jpg");
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+}
+
+.logo {
+    width: 110px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    color: white;
+    font-size: 1.2rem;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+
+nav {
+    background: #1b5e20;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    background: #43a047;
+    border-radius: 5px;
+}
+
+
+section {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 25px;
+    background: rgb(236, 255, 249);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .08);
+}
+
+section h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+#mision-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.card-info,
+.carrera,
+.actividad,
+.card {
+    background: rgb(236, 255, 249);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+}
+
+#bachilleratos {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+#bachilleratos h2 {
+    margin-bottom: 30px;
+}
+
+#bachilleratos .carrera {
+    background: rgb(236, 255, 249);
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .08);
+}
+
+#estipendio .carrera,
+#demeritos .carrera,
+#destacado .carrera,
+#medallas .carrera,
+#tienda .carrera,
+#laboratorio .carrera {
+    background: rgb(236, 255, 249);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.carrera h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.carrera p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 240px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid #4caf50;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .10);
+    transition: .3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+.actividades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.actividad img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.actividad h3 {
+    padding: 15px;
+    color: #2e7d32;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.card h3 {
+    color: #2e7d32;
+}
+
+.comentario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgb(236, 255, 249);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+    margin-bottom: 15px;
+}
+
+.comentario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4caf50;
+}
+
+.texto-comentario h4 {
+    margin-bottom: 5px;
+    color: #2e7d32;
+}
+
+.texto-comentario p {
+    margin: 0;
+    color: #333;
+}
+
+form {
+    background: rgb(236, 255, 249);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#matricula form {
+    max-width: 700px;
+    margin: auto;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #81c784;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+.info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info a {
+    display: inline-block;
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.info a:hover {
+    background: #1b5e20;
+}
+
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.btn-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: 007bff;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    mily: Arial, sans-serif;
+    : 100;
+}
+
+.btn-flotante:hover {
+    background: green;
+}
+
+@media(max-width:768px) {
+
+    #mision-vision {
+        grid-template-columns: 1fr;
+    }
+
+}
